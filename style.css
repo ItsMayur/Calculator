@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #cafff8;
+}
 .container{
+    height: 100vh;
     text-align: center;
-    margin-top: 50px;
 }
 h1{
-    font-family: sans-serif;
+    font-family: monospace;
 }
 table{
     margin: auto;
@@ -15,7 +18,7 @@ table{
 input{
     margin-top: 3px;
     margin-bottom: 12px;
-    background-color: greenyellow;
+    background-color: rgb(97, 242, 71);
     text-align: right;
     font-size: 32px;
     border-radius: 23px;
@@ -23,7 +26,7 @@ input{
     height: 50px;
 }
 button{
-    background: rgb(224, 224, 224);
+    background: #cafff8;
     border: none;
     margin: 3px;
     width: 90px;
@@ -33,9 +36,58 @@ button{
 }
 .calculator{
     background-color: rgb(26, 26, 26);
-    margin: 15px;
+    margin: 5vh 0vw;
     border: 2px solid black;
     border-radius: 32px;
     display: inline-block;
     padding: 5px;
+}
+.title{
+    background-color: #05fcdb;
+    padding: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#toggle{
+    height: 42px;
+    width: 42px;
+    padding: 4px;
+
+    border-radius: 35px;
+    border: none;
+    color : #ffffff;
+    background:rgb(27, 27, 27);
+}
+.title p{
+    font-size: 40px;
+}
+.dark .title{
+    background-color: rgb(2, 6, 18);
+}
+.dark{
+    background-color: rgb(2, 6, 18);
+    color: #05fcdb;
+}
+.dark button{
+    background: rgb(0, 0, 0);
+    color: #05fcdb;
+}
+.dark div .calculator{
+    background: rgb(44, 44, 44);;
+}
+.dark div div #screen{
+    color: black;
+    background: #05fcdb;
+}
+.dark div #toggle{
+    background-color: #05fcdb;
+    color: black;
+}
+footer{
+    color: rgb(0, 0, 0);
+    background: #05fcdb;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }

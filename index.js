@@ -23,3 +23,14 @@ for(item of buttons){
         }
     })
 }
+
+// let theme = document.querySelectorAll('theme');
+// for(item of theme){
+//     item.addEventListener('click',(e)=>{
+//         document.getElementsByTagName('body')[0].classList.theme("dark")
+//     });
+// }
+
+document.getElementById("toggle").addEventListener("click", function(){
+    document.getElementsByTagName('body')[0].classList.toggle("dark");
+});
